@@ -23,6 +23,12 @@ jobs:
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
             dep ensure
         fi
-
-    - name: Build
-      run: go build -v .
+    
+    - name : Build for Windows
+      run: env GOOS=windows GOARCH=amd64 go build switch/nsp/diff
+  
+    - name : Build for MacOS
+      run: env GOOS=darwin GOARCH=amd64 go build switch/nsp/diff
+    
+    - name : Build for Linux
+      run: env GOOS=linux GOARCH=amd64 go build switch/nsp/diff
