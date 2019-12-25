@@ -22,7 +22,7 @@ Local .NSP files must contain their titleId and version in their filename (for e
 
 ## Building
 - Install and setup latest Go
-- Get the module and its dependencies: `go get -u github.com/giwty/nsp-update`
+- Get the module and its dependencies: `go get -u switch/nsp/diff`
 - Build it for the OS you need, and make sure to choose `amd64` architecture:
-    - `env GOOS=target-OS GOARCH=amd64 go build github.com/giwty/nsp-update`
+    - `env GOOS=target-OS GOARCH=amd64 go build switch/nsp/diffe`
     - `target-OS` can be `windows`, `darwin` (mac OS), `linux`, or any other (check the Go documentation for a complete list).
