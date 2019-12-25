@@ -19,8 +19,8 @@ import (
 )
 
 const (
-	titles_json_uri   = "https://raw.githubusercontent.com/blawar/titledb/master/titles.US.en.json"
-	versions_json_url = "https://raw.githubusercontent.com/blawar/titledb/master/versions.json"
+	titles_json_uri   = "https://tinfoil.media/repo/db/titles.json"
+	versions_json_url = "https://tinfoil.media/repo/db/versions.json"
 )
 
 var (
